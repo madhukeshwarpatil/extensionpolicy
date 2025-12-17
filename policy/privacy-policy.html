@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearNow - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #1e40af;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #4b5563;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #4b5563;
+        }
+        
+        .highlight {
+            background: #eff6ff;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .contact {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+        }
+        
+        .permission-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9fafb;
+            border-radius: 4px;
+        }
+        
+        .permission-item strong {
+            color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ClearNow Privacy Policy</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> December 17, 2024</p>
+        
+        <div class="highlight">
+            <strong>Summary:</strong> ClearNow does not collect, transmit, or share any user data with external servers. All data is stored locally in your browser and never leaves your device.
+        </div>
+        
+        <h2>1. Data Collection</h2>
+        <p>
+            <strong>ClearNow does not collect any personal information or browsing data.</strong> The extension operates entirely locally within your browser and does not transmit any data to external servers, third-party services, or analytics platforms.
+        </p>
+        
+        <h2>2. Local Data Storage</h2>
+        <p>
+            ClearNow stores the following data <strong>locally in your browser</strong> using Chrome's storage API:
+        </p>
+        <ul>
+            <li><strong>User Preferences:</strong> Your theme preference (light/dark mode), auto-reload setting, domain profile settings, and popup reminder preferences</li>
+            <li><strong>Clearing History:</strong> A local log of cache clearing operations including:
+                <ul>
+                    <li>Domain names where cache was cleared</li>
+                    <li>Timestamp of each clearing operation</li>
+                    <li>Options selected (cache, cookies, localStorage, etc.)</li>
+                    <li>Number of items cleared</li>
+                </ul>
+            </li>
+            <li><strong>Last Cleared Timestamps:</strong> Per-domain timestamps tracking when cache was last cleared (used for badge reminders)</li>
+        </ul>
+        <p>
+            All this data is stored in Chrome's local storage and sync storage, which is encrypted and managed by Chrome itself. This data never leaves your device.
+        </p>
+        
+        <h2>3. Permissions Explanation</h2>
+        <p>
+            ClearNow requires the following permissions to function:
+        </p>
+        
+        <div class="permission-item">
+            <strong>browsingData:</strong> Required to clear browser cache, cookies, history, and downloads. This permission allows the extension to remove browsing data from your browser.
+        </div>
+        
+        <div class="permission-item">
+            <strong>storage:</strong> Used to save your preferences and clearing history locally in your browser. No data is transmitted externally.
+        </div>
+        
+        <div class="permission-item">
+            <strong>tabs:</strong> Required to access information about open tabs and clear storage across multiple tabs when needed.
+        </div>
+        
+        <div class="permission-item">
+            <strong>scripting:</strong> Required to inject scripts into web pages to clear localStorage, sessionStorage, and IndexedDB data.
+        </div>
+        
+        <div class="permission-item">
+            <strong>activeTab:</strong> Required to access information about the currently active tab (domain, URL, etc.).
+        </div>
+        
+        <div class="permission-item">
+            <strong>Host Permissions (&lt;all_urls&gt;):</strong> Required to:
+            <ul>
+                <li>Show on-screen reminders on development and QA/staging websites</li>
+                <li>Detect the environment type (dev/QA/production) of websites</li>
+                <li>Extract website primary colors for dynamic theming</li>
+            </ul>
+            <p style="margin-top: 10px;"><strong>Important:</strong> The extension does not access or read any content from websites. It only injects scripts to clear storage data when you explicitly request it, or shows reminders on dev/QA sites (if enabled).</p>
+        </div>
+        
+        <h2>4. Data Transmission</h2>
+        <p>
+            <strong>ClearNow does not transmit any data to external servers.</strong> The extension:
+        </p>
+        <ul>
+            <li>Does not use analytics or tracking services</li>
+            <li>Does not send data to third-party APIs</li>
+            <li>Does not collect usage statistics</li>
+            <li>Does not communicate with external servers</li>
+            <li>All operations are performed locally in your browser</li>
+        </ul>
+        
+        <h2>5. Third-Party Services</h2>
+        <p>
+            ClearNow does not use any third-party services, analytics tools, or external APIs. The extension is completely self-contained and operates entirely within your browser.
+        </p>
+        
+        <h2>6. User Rights and Control</h2>
+        <p>
+            You have complete control over your data:
+        </p>
+        <ul>
+            <li><strong>View History:</strong> You can view your clearing history in the extension popup</li>
+            <li><strong>Export Data:</strong> You can export your clearing history as JSON files</li>
+            <li><strong>Clear History:</strong> You can delete all clearing history at any time</li>
+            <li><strong>Uninstall:</strong> Uninstalling the extension removes all stored data</li>
+            <li><strong>Preferences:</strong> You can change or reset your preferences at any time</li>
+        </ul>
+        
+        <h2>7. Data Security</h2>
+        <p>
+            All data stored by ClearNow is managed by Chrome's built-in storage system, which:
+        </p>
+        <ul>
+            <li>Is encrypted by Chrome</li>
+            <li>Is stored locally on your device</li>
+            <li>Is protected by Chrome's security model</li>
+            <li>Is not accessible to other extensions or websites</li>
+        </ul>
+        
+        <h2>8. Children's Privacy</h2>
+        <p>
+            ClearNow does not knowingly collect any information from children. Since the extension does not collect any data, this is not applicable.
+        </p>
+        
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this privacy policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this page. We encourage you to review this policy periodically.
+        </p>
+        
+        <h2>10. Contact Information</h2>
+        <div class="contact">
+            <p>
+                If you have any questions or concerns about this privacy policy or how ClearNow handles data, please contact us:
+            </p>
+            <p>
+                <strong>Email:</strong> [Your Email Address]<br>
+                <strong>GitHub:</strong> [Your GitHub Repository URL]
+            </p>
+            <p style="margin-top: 15px; font-size: 14px; color: #666;">
+                <em>Note: Please replace the placeholder contact information above with your actual contact details before publishing.</em>
+            </p>
+        </div>
+        
+        <h2>11. Compliance</h2>
+        <p>
+            ClearNow is designed to comply with:
+        </p>
+        <ul>
+            <li>Chrome Web Store Developer Program Policies</li>
+            <li>General Data Protection Regulation (GDPR) - as we collect no personal data</li>
+            <li>California Consumer Privacy Act (CCPA) - as we collect no personal data</li>
+        </ul>
+        
+        <div class="highlight" style="margin-top: 40px;">
+            <p style="margin: 0;">
+                <strong>Your Privacy Matters:</strong> ClearNow is built with privacy as a core principle. We believe you should have full control over your browsing data, and we've designed the extension to operate entirely locally without any external data transmission.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
